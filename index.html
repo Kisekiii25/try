@@ -1,16 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <div class="main-container">
-            <p>Ugh</p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+    }
+    .input-section {
+      margin-bottom: 20px;
+    }
+    .message {
+      display: none;
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .copy-code {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #007BFF;
+      cursor: pointer;
+    }
+    .copy-code:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="input-section" id="input-section">
+      <p>Enter the code to view the message:</p>
+      <input type="text" id="code-input" placeholder="Enter code here" />
+      <button onclick="checkCode()">Submit</button>
+      <p class="error" id="error-message"></p>
+    </div>
+    <div class="message" id="message">
+For girl that really special for me,
 
-    </body>
+
+This letter is not a love or sweet letter, but this is my way to tell you what I really felt for you.
+
+What I felt for you is really Genuine, but I dont know if you can see that, because isa lang akong nonchalant pag nasa school, hindi naman nonchalant talaga, pero tahimik lang ako pag nasa school kase may pagka introvert talaga sa personality ko (nakikita mo naman siguro yun HAHAHA)
+Genuine yung love ko sayo but I can't really show it to you dahil sa mga limitations ko, but inside me, inside my heart you are really special to me, minsan tuloy nasa isip ko baka na bo-bored ka sakin, and I scared na baka na bo-bored ka and mag hanap ka ng iba for you to feel the love that you're looking for.
+But iam glad because hindi ko naman nakikita yun sayo, instead lumalapit kapa sa akin then inaask mo ako ng anything. Like kumain nava ako? Ect... And ako tuloy yung nahihiya dahil sa pagka introvert ko, lalo na sayo.(mas nahihiya talaga ako lalo na pag gusto ko yung tao)
+
+Kaya gusto konarin i-overcome yung pagka introvert ko e HAHAHA. Ako kase tung lalaki kaya dapat nga ako pa yung nagtatanong sayo ng mga ganong bagay. But I'll try my best parin naman. 
+
+And sometimes nahihiya ako pag nililibre mo ako, kase ako nga dapat ang nag ti-treat sayo eh. Kaya eager narin ako mag ka work para naman makabawi ako sayo. Hindi ko naman iniisip yung bigay lang ng bigay or ect... But I want lang ng give and take. Oo sanabi mo sakin dati na okay lang sayo ikaw ang nag bibigay or gumagastos, pero para sakin hindi pwede yon. Gusto ko may give and take tayo, ayoko ng ikaw lang palagi gumagastos siyempre pinag hirapan mo parin yon. And uulitin ko ulit LALAKI ako eh, syempre as a Man ayoko na ikaw lang ang nag bibigay :>> don't worry I'll try my best to find a job, not only para lang makabawi ako sayo, siyempre gusto ko narin makatulong kay papa, and matulungan sarili ko.
+
+Kaya sinabi korin sayo na hindi ako ready sa label na gf or magka GF na eh, kase ayoko i-offer sayo yung ganitong keivin, I want to be the version of me. I want to be the best Boyfriend for you pat, sounds cringed or OA man, but I want to be the cool to your eyes. Yung feeling na kaya Kona ibigay yung mga bagay na gusto ko ibigay sayo as your boyfriend ang sarap siguro non sa pakiramdam na nabibigay kona yung mga bagay na gusto ko for you na ako mismo nag effort para maibigay yun, and maaaya na kita i-date na alam na mismo ng mga magulang natin. Yet, alam kong malayo pa for now mangyari yan. Pero I know na may planto si god for us.
+
+And also kaya special ka sakin kase pag nakikita kita gumagaan loob ko, wala kapang ginagawa pero nawawala na yung mga pressure or stress ko. That's why I'm glad na pinakilala ka ni lord sakin :>> 
+
+I want to tell you more, but  dito nalang muna siguro for now ;>> 
+
+Just enjoy our life muna, and enjoy the upcoming Christmas and New year with our family.
+
+
+And I want you to know na miss na kita :> ayun langggg :>>>
+         
+         
+      <p class="copy-code" onclick="copyCode()">Click here to copy the Link: <strong
+      > If gusto mo mag reply click molang to then paste mo sa chomre :>></strong>
+      </p>
+         
+        </div>
+  </div>
+  <script>
+    function checkCode() {
+      const input = document.getElementById("code-input").value;
+      const message = document.getElementById("message");
+      const errorMessage = document.getElementById("error-message");
+
+      if (input === "forPatricia") {
+        document.getElementById("input-section").style.display = "none";
+        message.style.display = "block";
+      } else {
+        errorMessage.textContent = "Mali HAHAHAHA";
+      }
+    }
+
+    function copyCode() {
+      navigator.clipboard.writeText("https://kisekiii25.github.io/secretmessage/").then(() => {
+        alert("LINK copied to clipboard!");
+      });
+    }
+  </script>
+</body>
 </html>
+
+
+
